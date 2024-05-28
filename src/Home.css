@@ -1,0 +1,138 @@
+/*NOSOTROS*/
+#tituloNosotros {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 3rem;
+  color: #078610;
+}
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+p {
+  margin: 5px;
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+}
+.containerButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#saberMas {
+  width: 120px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #078610;
+  border-radius: 50px;
+  transition: 0.5s;
+  animation: breathing 2s ease-in-out infinite;
+}
+#saberMas:hover {
+  transform: scale(1.2);
+  animation: none;
+}
+@keyframes breathing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+#iconBajar {
+  color: black;
+  margin-top: 30px;
+  animation: bajar 2s ease-in-out infinite;
+}
+@keyframes bajar {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*PRODUCTOS*/
+#tituloProductos {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 3rem;
+  color: #078610;
+}
+#containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  margin: 10px;
+  min-height: 340px;
+  border-radius: 20px;
+  background: #d8e8dd;
+  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #078610;
+  margin: 10px 0 0 0px;
+}
+
+.card-image {
+  min-height: 170px;
+  max-width: 250px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+}
+
+.card-body {
+  margin: 5px 0 0 0px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  text-align: justify;
+}
+
+.buttonVerMas {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #078610;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.buttonVerMas:hover {
+  transform: scale(1.2);
+  animation: none;
+}

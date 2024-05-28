@@ -1,0 +1,144 @@
+#containerNosotros {
+  background-color: #ffffff;
+  margin: 20px;
+  margin-top: 150px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000000;
+  -webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.titulo {
+  color: #078610;
+}
+
+#containerNosotros2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 20px;
+  padding-top: 0px;
+  color: #000000;
+  -webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#contFuturo {
+  background-color: #d8e8dd;
+  margin: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #000000;
+}
+
+#imgFuturo {
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+  height: auto;
+  margin-right: 5px;
+}
+
+#pFuturo {
+  margin: 5px;
+}
+
+#contInvestigacion {
+  background-color: #d8e8dd;
+  margin: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+  box-shadow: 3px 3px 8px #000000;
+}
+
+#imgInvestigacion {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+#pInvestigacion {
+  margin: 5px;
+}
+
+#contDesarrollo {
+  background-color: #d8e8dd;
+  margin: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #000000;
+}
+
+#imgDesarrollo {
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+  margin-right: 5px;
+  height: 100%;
+}
+#pDesarrollo {
+  margin: 5px;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+strong {
+  font-size: 1.3rem;
+  color: #078610;
+}
+
+/* ANIMACIONES DE ENTRADA*/
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 855px) {
+  #containerNosotros2 {
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+}

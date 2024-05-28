@@ -1,0 +1,14 @@
+#containerProductos {
+  margin-top: 150px;
+}
+.titulo {
+  color: #078610;
+}
+strong {
+  font-size: 1.3rem;
+  color: #078610;
+}
+p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
