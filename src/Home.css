@@ -8,11 +8,13 @@
 h2 {
   color: black;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  padding: 0px 15px;
 }
 p {
   margin: 5px;
-  margin-top: 30px;
+  padding: 0px 15px;
+  margin-top: 20px;
   color: black;
   text-align: center;
 }
@@ -27,6 +29,7 @@ p {
 #saberMas {
   width: 120px;
   height: 40px;
+  border: #078610;
   margin-top: 40px;
   background-color: #078610;
   border-radius: 50px;
@@ -71,24 +74,49 @@ p {
 }
 
 /*PRODUCTOS*/
-#tituloProductos {
+/* Home.css */
+
+#containerHomeProductos {
   text-align: center;
+  padding: 20px;
+}
+
+#tituloProductos {
   margin-top: 70px;
   font-size: 3rem;
   color: #078610;
 }
+
+h2 {
+  color: black;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+p {
+  color: black;
+  margin: 10px 0 20px;
+}
+
 #containerCards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
 }
+
+.swiper-container {
+  width: 94%; /* Ajusta el ancho al contenido */
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 300px; /* Ancho fijo para las tarjetas */
+}
+
 .card {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 250px;
+  justify-content: space-between;
   margin: 10px;
   min-height: 340px;
   border-radius: 20px;
@@ -98,7 +126,13 @@ p {
 }
 
 .card:hover {
-  translate: 0 -10px;
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
 .card-title {
@@ -106,22 +140,19 @@ p {
   font-size: 18px;
   font-weight: 600;
   color: #078610;
-  margin: 10px 0 0 0px;
-}
-
-.card-image {
-  min-height: 170px;
-  max-width: 250px;
-  background-color: #c9c9c9;
-  border-radius: 15px;
-  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+  margin: 10px 0;
 }
 
 .card-body {
-  margin: 5px 0 0 0px;
+  margin: 10px 0;
   color: rgb(31, 31, 31);
   font-size: 15px;
   text-align: justify;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
 }
 
 .buttonVerMas {
@@ -131,8 +162,10 @@ p {
   background-color: #078610;
   border-radius: 50px;
   transition: 0.5s;
+  border: none;
+  color: white;
 }
+
 .buttonVerMas:hover {
   transform: scale(1.2);
-  animation: none;
 }
