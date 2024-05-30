@@ -1,5 +1,5 @@
 import "./Productos.css";
-import Nav from "./Nav";
+import Nav from "../Nav/Nav.jsx";
 
 function Productos() {
   return (
@@ -7,7 +7,7 @@ function Productos() {
       <Nav />
       <div id="containerProductos">
         <h1 className="titulo">PRODUCTOS</h1>
-        <p>
+        <p className="pProductos">
           En <strong>RustikaSeed</strong>, nos dedicamos a la innovación
           agrícola ofreciendo una amplia gama de productos que incluyen semillas
           de tomate, chile, hortalizas, granos y biofertilizantes. Nos
@@ -21,7 +21,7 @@ function Productos() {
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/05/94/67/45/240_F_594674526_7oL1c2DpQH0ceZk78gjKbIxHWzRVNBGK.jpg"
             ></img>
-            <p>
+            <p className="pProductos">
               <strong>Semillas De Hortalizas </strong> Las semillas de
               hortalizas híbridas y variedades adaptables representan una
               innovación significativa en la agricultura moderna, especialmente
@@ -37,7 +37,7 @@ function Productos() {
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/02/15/24/13/240_F_215241343_VMmzRvWDzpqfN5zFn7nEE6Eu7gyTFUHb.jpg"
             ></img>
-            <p>
+            <p className="pProductos">
               <strong>Tomates </strong>
               Nuestro programa de mejora de tomates se centra en la creación de
               híbridos avanzados que combinan vigor vegetal superior, raíces
@@ -54,7 +54,7 @@ function Productos() {
               className="imgProductos"
               src="https://t3.ftcdn.net/jpg/08/00/24/00/240_F_800240050_EcXZ4dAlB1Za2SiZX0izJkAZJlsmUBOs.jpg"
             ></img>
-            <p>
+            <p className="pProductos">
               <strong>Chiles </strong>
               La rusticidad en nuestras variedades híbridas de chiles significa
               que estas plantas pueden prosperar en una amplia gama de
@@ -70,7 +70,7 @@ function Productos() {
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/04/34/27/21/240_F_434272183_bJy3DtMV4Kr0n1MQS2SpfWiwzO5KsYuJ.jpg"
             ></img>
-            <p>
+            <p className="pProductos">
               <strong>Semillas Granos </strong>
               Contamos con un extenso catálogo de semillas de granos y forrajes
               diseñadas para adaptarse a una amplia variedad de condiciones
@@ -85,7 +85,7 @@ function Productos() {
               className="imgProductos"
               src="https://t3.ftcdn.net/jpg/07/74/85/26/240_F_774852699_NI2BzZ5cPNnilAmYX6YXEE0qVXNfrnNr.jpg"
             ></img>
-            <p>
+            <p className="pProductos">
               <strong>Biofertilizantes </strong>
               En nuestra empresa, nos destacamos por ofrecer una amplia gama de
               biofertilizantes que están diseñados para mejorar la fertilidad

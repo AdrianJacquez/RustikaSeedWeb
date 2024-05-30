@@ -95,7 +95,8 @@ h2 {
 
 p {
   color: black;
-  margin: 10px 0 20px;
+  margin: 10px 20px;
+  font-size: 1.1rem;
 }
 
 #containerCards {
@@ -146,7 +147,7 @@ p {
 .card-body {
   margin: 10px 0;
   color: rgb(31, 31, 31);
-  font-size: 15px;
+  font-size: 1.2rem;
   text-align: justify;
 }
 

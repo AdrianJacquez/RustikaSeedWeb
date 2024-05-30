@@ -20,7 +20,7 @@
   box-shadow: 1px 1px 15px #5c5a5a;
   -webkit-animation: focus-in-contract-bck 1s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: focus-in-contract-bck 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  animation: focus-in-contract-bck 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
 }
 @-webkit-keyframes focus-in-contract-bck {
@@ -63,7 +63,13 @@
   height: 100px;
   margin: 5px;
 }
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
 .linksNav {
+  position: relative;
   color: #078610;
   text-decoration: none;
   font-size: 1.8rem;
@@ -80,4 +86,105 @@
   margin: 0;
   text-align: center;
   color: #010101;
+}
+#contHamburger {
+  display: none;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: #359503;
+  margin-right: 20px;
+  transition: 0.4s;
+}
+.hamburger:hover {
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #078610;
+  margin: 4px 20px;
+  transition: 0.4s;
+}
+.linksNav:hover .contLinkProducto {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+}
+.contLinkProducto {
+  display: none;
+  background-color: #d8e8dd;
+  padding: 5px 15px 15px 15px;
+  border-radius: 10px;
+  width: 250px;
+  position: absolute;
+  top: 45px;
+  right: -60px;
+  box-shadow: 5px 5px 15px #5c5a5a;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+.linkProducto {
+  text-decoration: none;
+  color: #078610;
+  font-size: 1.4rem;
+  text-shadow: none;
+  margin: 5px 5px;
+  transition: 0.3s;
+}
+.linkProducto:hover {
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 5px #89ca63;
+}
+@media (max-width: 810px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    position: absolute;
+    top: 114px;
+    left: 0;
+    background-color: #d8e8dd;
+    padding: 20px;
+    box-shadow: 1px 1px 15px #5c5a5a;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  #contHamburger {
+    display: flex;
+  }
+  #header,
+  #navegador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contAcordion {
+    display: flex;
+  }
+  .linkProducto {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+  }
+  .linkProducto:hover {
+    font-size: 1.2rem;
+    text-shadow: 3px 3px 8px #078610;
+  }
+  #iconAcordeon {
+    color: #078610;
+  }
+  #iconAcordeon:hover {
+    transform: scale(1.1);
+  }
 }

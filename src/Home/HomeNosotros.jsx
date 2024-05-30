@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../Home.css";
+import "./Home.css";
 import { Icon } from "react-icons-kit";
 import { angleDoubleDown } from "react-icons-kit/fa/angleDoubleDown";
 

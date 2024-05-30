@@ -1,5 +1,9 @@
 #containerProductos {
-  margin-top: 150px;
+  margin: 150px 20px 20px 20px;
+  padding: 5px;
+  -webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .titulo {
   color: #078610;
@@ -8,7 +12,7 @@ strong {
   font-size: 1.3rem;
   color: #078610;
 }
-p {
+.pProductos {
   text-align: justify;
   font-size: 1.2rem;
 }
@@ -21,6 +25,9 @@ p {
   padding: 20px;
   padding-top: 0px;
   color: #000000;
+  -webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .contRow {
   display: flex;

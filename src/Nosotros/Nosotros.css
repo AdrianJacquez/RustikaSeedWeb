@@ -29,31 +29,32 @@
   animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-#contFuturo {
+.contRowFD {
   background-color: #d8e8dd;
   margin: 0px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px;
   box-shadow: 3px 3px 8px #000000;
 }
 
-#imgFuturo {
+.imgFD {
   border-radius: 5px;
   float: left;
   width: 50%;
   height: auto;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
-#pFuturo {
+.pFD {
   margin: 5px;
+  text-align: justify;
 }
 
 #contInvestigacion {
   background-color: #d8e8dd;
   margin: 0px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   grid-row: span 2;
@@ -64,31 +65,14 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 #pInvestigacion {
   margin: 5px;
+  text-align: justify;
 }
 
-#contDesarrollo {
-  background-color: #d8e8dd;
-  margin: 0px;
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: 3px 3px 8px #000000;
-}
-
-#imgDesarrollo {
-  border-radius: 5px;
-  float: left;
-  width: 50%;
-  margin-right: 5px;
-  height: 100%;
-}
-#pDesarrollo {
-  margin: 5px;
-}
-
-p {
+#pNosotros {
   text-align: justify;
   font-size: 1.2rem;
 }

@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "../Home.css";
-import productos from "./JsonProductos";
+import "./Home.css";
+import productos from "../Jsons/JsonProductos";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
 function HomeProductos() {
@@ -51,7 +51,9 @@ function HomeProductos() {
                 <h3 className="card-title">{producto.titulo}</h3>
                 <p className="card-body">{producto.descripcion}</p>
                 <div className="containerButton">
-                  <button className="buttonVerMas">Ver más</button>
+                  <a href={producto.ruta}>
+                    <button className="buttonVerMas">Ver más</button>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
