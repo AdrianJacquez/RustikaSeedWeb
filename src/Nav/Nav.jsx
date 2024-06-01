@@ -59,7 +59,7 @@ function Nav() {
           <a id="homeLogo" href="/">
             <img
               id="logo"
-              src="./public/images/Rustika.jpg"
+              src="./public/images/Rustika.png"
               alt="Rustika Logo"
             />
           </a>
@@ -87,7 +87,7 @@ function Nav() {
                     </Icon>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <a className="linkProducto" href="/">
+                    <a className="linkProducto" href="/hortalizas">
                       Semillas De Hortalizas
                     </a>
                     <a className="linkProducto" href="/">
@@ -120,10 +120,10 @@ function Nav() {
               <a className="linksNav" id="productoHover" href="/productos">
                 Productos
                 <div className="contLinkProducto">
-                  <a className="linkProducto" href="/">
+                  <a className="linkProducto" href="/hortalizas">
                     Semillas De Hortalizas
                   </a>
-                  <a className="linkProducto" href="/">
+                  <a className="linkProducto" href="/tomates">
                     Tomates
                   </a>
                   <a className="linkProducto" href="/">

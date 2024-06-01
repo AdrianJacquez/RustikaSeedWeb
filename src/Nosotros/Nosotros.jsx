@@ -1,5 +1,6 @@
 import "./Nosotros.css";
 import Nav from "../Nav/Nav.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function Nosotros() {
   return (
@@ -62,6 +63,7 @@ function Nosotros() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

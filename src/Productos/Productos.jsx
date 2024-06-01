@@ -1,5 +1,6 @@
 import "./Productos.css";
 import Nav from "../Nav/Nav.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function Productos() {
   return (
@@ -96,6 +97,7 @@ function Productos() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
