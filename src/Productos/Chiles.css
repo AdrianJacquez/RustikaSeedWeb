@@ -14,7 +14,7 @@
   display: flex;
 }
 .contCard {
-  margin: 0px 20px 0px 30px;
+  margin: 0px 50px 0px 50px;
 }
 .tipoChile {
   color: #078610;
@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 900px) {
-  #containerTomateCards {
+  #containerChilesCards {
     display: flex;
     flex-direction: column;
   }

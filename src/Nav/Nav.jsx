@@ -57,7 +57,7 @@ function Nav() {
       <header id="header">
         <nav id="navegador">
           <a id="homeLogo" href="/">
-            <img id="logo" src="./public/images/logoR.png" alt="Rustika Logo" />
+            <img id="logo" src="./public/images/logoR.jpg" alt="Rustika Logo" />
           </a>
 
           {isMobile ? (
@@ -92,7 +92,7 @@ function Nav() {
                     <a className="linkProducto" href="/chiles">
                       Chiles
                     </a>
-                    <a className="linkProducto" href="/">
+                    <a className="linkProducto" href="/granos">
                       Semillas Granos
                     </a>
                     <a className="linkProducto" href="/">
@@ -125,7 +125,7 @@ function Nav() {
                   <a className="linkProducto" href="/chiles">
                     Chiles
                   </a>
-                  <a className="linkProducto" href="/">
+                  <a className="linkProducto" href="/granos">
                     Semillas Granos
                   </a>
                   <a className="linkProducto" href="/">

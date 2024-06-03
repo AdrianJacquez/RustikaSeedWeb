@@ -36,7 +36,7 @@ function Tomates() {
         <div id="containerTomateCards">
           <div className="contCard">
             {" "}
-            <h2 className="tipoTomate">Tomate Indeterminado Saladette:</h2>
+            <h2 className="tipoTomate">TOMATE INDETERMINADO SALADETTE</h2>
             <Swiper
               effect={"cards"}
               grabCursor={true}
@@ -59,7 +59,7 @@ function Tomates() {
 
           <div className="contCard">
             {" "}
-            <h2 className="tipoTomate">Tomate Indeterminado Bola:</h2>
+            <h2 className="tipoTomate">TOMATE INDETERMINADO BOLA</h2>
             <Swiper
               effect={"cards"}
               grabCursor={true}
@@ -81,7 +81,7 @@ function Tomates() {
           </div>
           <div className="contCard">
             {" "}
-            <h2 className="tipoTomate">Tomate Determinado Saladette:</h2>
+            <h2 className="tipoTomate">TOMATE DETERMINADO SALADETTE</h2>
             <Swiper
               effect={"cards"}
               grabCursor={true}
