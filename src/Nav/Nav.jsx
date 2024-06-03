@@ -95,7 +95,7 @@ function Nav() {
                     <a className="linkProducto" href="/granos">
                       Semillas Granos
                     </a>
-                    <a className="linkProducto" href="/">
+                    <a className="linkProducto" href="/biofertilizantes">
                       Biofertilizantes
                     </a>
                   </AccordionDetails>
@@ -128,7 +128,7 @@ function Nav() {
                   <a className="linkProducto" href="/granos">
                     Semillas Granos
                   </a>
-                  <a className="linkProducto" href="/">
+                  <a className="linkProducto" href="/biofertilizantes">
                     Biofertilizantes
                   </a>
                 </div>
