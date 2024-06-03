@@ -11,8 +11,11 @@ function Footer() {
             Ing. Antonio Velarde L. <br /> (667) 7104533 y (667) 198 1427
           </p>
           <p>
-            <a href="Ventas@rustikaseed.com ">Ventas@rustikaseed.com</a> <br />{" "}
-            <a href="rustikamexico@yahoo.com.mx">rustikamexico@yahoo.com.mx</a>
+            <a href="mailto:Ventas@rustikaseed.com">Ventas@rustikaseed.com</a>{" "}
+            <br />{" "}
+            <a href="mailto:rustikamexico@yahoo.com.mx">
+              rustikamexico@yahoo.com.mx
+            </a>
           </p>
         </div>
         <div className="footer-section">
