@@ -1,0 +1,75 @@
+#containerChiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 20px 20px 20px;
+  padding: 5px;
+}
+#tituloChiles {
+  color: #078610;
+  margin: 0;
+  text-align: center;
+}
+#containerChilesCards {
+  display: flex;
+}
+.contCard {
+  margin: 0px 20px 0px 30px;
+}
+.tipoChile {
+  color: #078610;
+}
+.mySwiperChiles {
+  width: 260px;
+  height: 435px;
+}
+
+.swiperSlideChiles {
+  border-radius: 18px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.swiperSlideChiles:nth-child(1n) {
+  background-color: #d8e8dd;
+}
+
+/* Estilos del contenido de las cards*/
+
+#containerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.cardImgT {
+  border-radius: 10px;
+  height: 150px;
+}
+.cardNombreT {
+  font-size: 1.2rem;
+  text-align: center;
+
+  margin: 10px 0px 0px 0px;
+  color: #078610;
+}
+.cardDescrT {
+  font-size: 14px;
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  font-weight: normal;
+  text-align: justify;
+}
+.cardTolerT {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+@media (max-width: 900px) {
+  #containerTomateCards {
+    display: flex;
+    flex-direction: column;
+  }
+}

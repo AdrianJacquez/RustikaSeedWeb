@@ -2,6 +2,8 @@ import "./Tomates.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import indetSaladette from "../Jsons/JsonIndetSaladette";
+import indetBola from "../Jsons/JsonIndetBola";
+import deteSaladette from "../Jsons/JsonDeteSaladette";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -32,24 +34,73 @@ function Tomates() {
           planta y le permite enfrentar desafíos ambientales con mayor eficacia.
         </p>
         <div id="containerTomateCards">
-          <Swiper
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards]}
-            className="mySwiper"
-          >
-            {indetSaladette.map((indetSala, index) => (
-              <SwiperSlide key={index}>
-                <div id="containerCard">
-                  <img className="cardImgT" src={indetSala.imagen} />
-                  <h3 className="cardNombreT">{indetSala.nombre}</h3>
-                  <p className="cardDescrT">{indetSala.descripcion}</p>
-                  <p className="cardTolerT">{indetSala.tolerancia}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-            ,
-          </Swiper>
+          <div className="contCard">
+            {" "}
+            <h2 className="tipoTomate">Tomate Indeterminado Saladette:</h2>
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiperIndetSaladette"
+            >
+              {indetSaladette.map((indetSala, index) => (
+                <SwiperSlide key={index} className="swiperSlideIndetSaladette">
+                  <div id="containerCard">
+                    <img className="cardImgT" src={indetSala.imagen} />
+                    <h3 className="cardNombreT">{indetSala.nombre}</h3>
+                    <p className="cardDescrT">{indetSala.descripcion}</p>
+                    <p className="cardTolerT">{indetSala.tolerancia}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+              ,
+            </Swiper>
+          </div>
+
+          <div className="contCard">
+            {" "}
+            <h2 className="tipoTomate">Tomate Indeterminado Bola:</h2>
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiperIndetSaladette"
+            >
+              {indetBola.map((indetBola, index) => (
+                <SwiperSlide key={index} className="swiperSlideIndetSaladette">
+                  <div id="containerCard">
+                    <img className="cardImgT" src={indetBola.imagen} />
+                    <h3 className="cardNombreT">{indetBola.nombre}</h3>
+                    <p className="cardDescrT">{indetBola.descripcion}</p>
+                    <p className="cardTolerT">{indetBola.tolerancia}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+              ,
+            </Swiper>
+          </div>
+          <div className="contCard">
+            {" "}
+            <h2 className="tipoTomate">Tomate Determinado Saladette:</h2>
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiperIndetSaladette"
+            >
+              {deteSaladette.map((deteSala, index) => (
+                <SwiperSlide key={index} className="swiperSlideIndetSaladette">
+                  <div id="containerCard">
+                    <img className="cardImgT" src={deteSala.imagen} />
+                    <h3 className="cardNombreT">{deteSala.nombre}</h3>
+                    <p className="cardDescrT">{deteSala.descripcion}</p>
+                    <p className="cardTolerT">{deteSala.tolerancia}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+              ,
+            </Swiper>
+          </div>
         </div>
       </div>
       <Footer />
