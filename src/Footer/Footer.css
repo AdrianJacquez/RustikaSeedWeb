@@ -3,6 +3,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  margin-top: 10px;
 }
 
 .footer-container {
@@ -81,7 +82,7 @@ ul {
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  top: -50px;
+  top: 60px;
 }
 .example-2 .icon-content a {
   position: relative;

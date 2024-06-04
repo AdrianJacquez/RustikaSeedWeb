@@ -13,8 +13,8 @@ function HomeProductos() {
       <h2>INNOVANDO EN AGRICULTURA</h2>
       <p>
         Con las mejores variedades de tomate y chile, además de semillas de
-        hortalizas, granos y biofertilizantes para un cultivo más eficiente y
-        sostenible.
+        hortalizas, granos y biofertilizantes para un cultivo más{" "}
+        <strong>eficiente </strong> y<strong> sostenible</strong>.
       </p>
 
       <div id="containerCards">

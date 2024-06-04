@@ -1,0 +1,112 @@
+.containerContacto {
+  margin-top: 150px;
+}
+.tituloContacto {
+  color: #078610;
+  text-align: center;
+}
+.pContacto {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.containerRepre {
+  display: flex;
+  justify-content: space-around;
+}
+/*Representante*/
+#contInfoContacto {
+  display: flex;
+  flex-direction: column;
+}
+.strongContacto {
+  font-size: 18px;
+}
+.linkContacto {
+  text-decoration: none;
+  color: #3f4bb8;
+}
+
+/*Formulario*/
+#formContacto {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 40px;
+}
+.labels {
+  color: #078610;
+  margin: 0px 15px;
+}
+.inputs {
+  background-color: #d8e8dd;
+  border: none;
+  height: 30px;
+  color: black;
+  border-radius: 15px;
+  margin: 0px 15px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  box-shadow: 15px 15px 30px #bebebe;
+}
+#message {
+  background-color: #d8e8dd;
+  border: none;
+  color: black;
+  border-radius: 15px;
+  margin: 0px 15px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  box-shadow: 15px 15px 30px #bebebe;
+}
+.btn {
+  background-color: #078610;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0px 15px;
+  height: 30px;
+  border: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/*DISTRIBUIDORES*/
+#contDistribuidores {
+  display: flex;
+  justify-content: space-around;
+}
+/* .contZonas{
+
+} */
+.zonaName {
+  color: #078610;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.tituloZona {
+  color: black;
+  font-size: 20px;
+}
+
+/*Mapa*/
+.mapa {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  padding-left: 0px;
+}
+
+/*Media querys*/
+@media (max-width: 900px) {
+  .containerRepre {
+    display: flex;
+    flex-direction: column;
+  }
+  #formContacto {
+    width: auto;
+  }
+  #contDistribuidores {
+    flex-direction: column;
+  }
+}

@@ -170,3 +170,11 @@ p {
 .buttonVerMas:hover {
   transform: scale(1.2);
 }
+
+/*EVENTOS*/
+#tituloEventos {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 3rem;
+  color: #078610;
+}

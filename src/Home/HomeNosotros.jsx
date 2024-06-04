@@ -24,9 +24,9 @@ function HomeNosotros() {
       <h1 id="tituloNosotros">Nosotros</h1>
       <h2>NUEVAS Y MEJORES SEMILLAS PARA MEXICO</h2>
       <p>
-        Empresa dedicada principalmente a la Investigación, Desarrollo y
-        comercialización de Biofertilizantes y Semillas horticolas en México y
-        Latinoamerica.
+        Empresa dedicada principalmente a la <strong>Investigación</strong>,
+        <strong> Desarrollo </strong> y<strong> comercialización </strong> de
+        Biofertilizantes y Semillas horticolas en México y Latinoamerica.
       </p>
       <div className="containerButton">
         <a href="/nosotros">
