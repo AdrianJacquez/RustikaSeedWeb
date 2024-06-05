@@ -1,12 +1,35 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contacto.css";
 
 function Formulario() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_webam7n",
+        "template_n4otic2",
+        form.current,
+        "WZwBh09ICLymbEYJW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mensaje enviado con éxito!");
+          form.current.reset(); // Limpiar los inputs después de enviar el formulario
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Hubo un error al enviar el mensaje.");
+        }
+      );
+  };
+
   return (
-    <form
-      id="formContacto"
-      action="https://formsubmit.io/send/adrijesuslerma@outlook.com"
-      method="POST"
-    >
+    <form id="formContacto" ref={form} onSubmit={sendEmail}>
       <label className="labels" htmlFor="name">
         Nombre
       </label>
@@ -56,12 +79,6 @@ function Formulario() {
       ></textarea>
 
       <input className="btn" type="submit" value="Enviar" />
-
-      <input
-        type="hidden"
-        name="_next"
-        value="http://localhost:5173/contacto"
-      />
     </form>
   );
 }
