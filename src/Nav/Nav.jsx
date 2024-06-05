@@ -57,7 +57,7 @@ function Nav() {
       <header id="header">
         <nav id="navegador">
           <a id="homeLogo" href="/">
-            <img id="logo" src="./public/images/logoR.jpg" alt="Rustika Logo" />
+            <img id="logo" src="/images/logoR.jpg" alt="Rustika Logo" />
           </a>
 
           {isMobile ? (
