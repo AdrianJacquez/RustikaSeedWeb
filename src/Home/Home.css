@@ -176,5 +176,66 @@ p {
   text-align: center;
   margin-top: 150px;
   font-size: 3rem;
-  color: #f10c0c;
+  color: #078610;
+}
+.containerCardsEventos {
+  display: flex;
+  justify-content: center;
+}
+.cardEvento {
+  box-sizing: border-box;
+  width: 250px;
+  height: 350px;
+  margin: 20px 20px;
+  background: rgb(216, 232, 221);
+  border: 2px solid #eefeef;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.cardEvento:hover {
+  border: 1px solid #078610;
+  transform: scale(1.05);
+}
+
+.cardEvento:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.mesEvento {
+  color: #078610;
+}
+.imageEvento {
+  width: 80%;
+  border-radius: 10px;
+}
+#verTodos {
+  width: 120px;
+  height: 40px;
+  border: #078610;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #078610;
+  border-radius: 50px;
+  transition: 0.5s;
+  animation: breathing 2s ease-in-out infinite;
+}
+#verTodos:hover {
+  transform: scale(1.2);
+  animation: none;
+}
+@media (max-width: 900px) {
+  #containerCardsEventos {
+    flex-direction: column;
+    align-items: center;
+  }
 }

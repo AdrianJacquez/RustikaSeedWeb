@@ -2,7 +2,11 @@ import "./Contacto.css";
 
 function Formulario() {
   return (
-    <form id="formContacto">
+    <form
+      id="formContacto"
+      action="https://formsubmit.io/send/adrijesuslerma@outlook.com"
+      method="POST"
+    >
       <label className="labels" htmlFor="name">
         Nombre
       </label>
@@ -13,7 +17,7 @@ function Formulario() {
         id="name"
         placeholder="Tu nombre"
         required
-      ></input>
+      />
 
       <label className="labels" htmlFor="email">
         Email
@@ -25,8 +29,8 @@ function Formulario() {
         name="email"
         placeholder="Tu email"
         required
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-      ></input>
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      />
 
       <label className="labels" htmlFor="subject">
         Asunto
@@ -37,7 +41,7 @@ function Formulario() {
         id="subject"
         name="subject"
         placeholder="Tu asunto"
-      ></input>
+      />
 
       <label className="labels" htmlFor="message">
         Mensaje
@@ -50,8 +54,16 @@ function Formulario() {
         cols={30}
         rows={5}
       ></textarea>
-      <input className="btn" type="submit" value="Enviar"></input>
+
+      <input className="btn" type="submit" value="Enviar" />
+
+      <input
+        type="hidden"
+        name="_next"
+        value="http://localhost:5173/contacto"
+      />
     </form>
   );
 }
+
 export default Formulario;

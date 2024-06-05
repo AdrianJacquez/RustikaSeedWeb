@@ -12,6 +12,8 @@
 }
 #containerChilesCards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .contCard {
   margin: 0px 50px 0px 50px;

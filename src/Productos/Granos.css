@@ -86,11 +86,20 @@
   text-align: justify;
   margin: 0px;
 }
+.tiposForraje {
+  width: 100%;
+}
+.tiposForraje .p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px 0px 0px 10px;
+}
 
-@media (max-width: 900px) {
+/*MEDIA QUERYS*/
+@media (max-width: 1600px) {
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #contMaiz {
     display: flex;
@@ -101,5 +110,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .imagesGranos {
+    width: 80%;
+  }
+  .maiz {
+    width: 90%;
+  }
+  .tiposForraje {
+    text-align: start;
+  }
+  .tipos {
+    padding-left: 80px;
   }
 }

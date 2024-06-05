@@ -1,21 +1,32 @@
 import "./Home.css";
+import ProximoEvento from "../Jsons/JsonProximoEvento.jsx";
 
 function HomeEventos() {
   return (
     <>
       <h1 id="tituloEventos">Eventos</h1>
-      <h2>NUEVAS Y MEJORES SEMILLAS PARA MEXICO</h2>
       <p>
-        ¡Únete a nosotros en nuestros eventos agrícolas donde promovemos el
-        desarrollo de la agricultura a través de semillas e insumos de alta
-        calidad, eficiencia y rendimiento! Descubre cómo puedes reducir costos
-        mientras minimizas el impacto en el medio ambiente. Te esperamos para
-        compartir conocimientos y experiencias que impulsen el crecimiento
-        sostenible en la agricultura. ¡No te lo pierdas!
+        ¡Participa en nuestros eventos agrícolas y descubre cómo nuestras
+        semillas e insumos de alta calidad pueden mejorar tu rendimiento y
+        eficiencia! Aprende a reducir costos y cuidar el medio ambiente con
+        prácticas sostenibles. Únete para intercambiar conocimientos y
+        experiencias. ¡Te esperamos!
       </p>
+      <h2>¡PROXIMO EVENTO!</h2>
+      {ProximoEvento.map((proximoEvento, index) => (
+        <div className="containerCardsEventos" key={index}>
+          <div className="cardEvento">
+            <h3 className="mesEvento">{proximoEvento.mes}</h3>
+            <img className="imageEvento" src={proximoEvento.imagen} />
+            <h4 className="nombreEvento">{proximoEvento.nombre}</h4>
+            <p className="datosEvento">{proximoEvento.datos}</p>
+          </div>
+        </div>
+      ))}
+
       <div className="containerButton">
         <a href="/eventos">
-          <button id="saberMas">Saber mas</button>
+          <button id="verTodos">Ver todos</button>
         </a>
       </div>
     </>

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Nosotros from "./Nosotros/Nosotros.jsx";
 import Productos from "./Productos/Productos.jsx";
+import Eventos from "./Eventos/Eventos.jsx";
 import Contacto from "./Contacto/Contacto.jsx";
 import Hortalizas from "./Productos/Hortalizas.jsx";
 import Tomates from "./Productos/Tomates.jsx";
@@ -18,6 +19,7 @@ function App() {
           <Route path={"/"} element={<Home />}></Route>
           <Route path={"/nosotros"} element={<Nosotros />} />
           <Route path={"/productos"} element={<Productos />} />
+          <Route path={"/eventos"} element={<Eventos />} />
           <Route path={"/contacto"} element={<Contacto />} />
           <Route path={"/hortalizas"} element={<Hortalizas />} />
           <Route path={"/tomates"} element={<Tomates />} />

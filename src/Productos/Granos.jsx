@@ -34,11 +34,11 @@ function Granos() {
             <strong>MAÍCES</strong>
             <div id="contMaiz">
               <p className="tipos">
-                <p className="p">- F1 Blanco (GRANO Y ELOTERO)</p>
-                <p className="p">- F1 AMARILLOS (GRANO Y ELOTERO)</p>
-                <p className="p">- F1 PROCESO (BLANCOS, AMAR Y BICOLOR)</p>
-                <p className="p">- CRIOLLOS (BLANCO, AZUL, ROJO, MEZCLAS)</p>
-                <p className="p">- MAS......</p>
+                <p className="p">- F1 blanco (grano y elotero)</p>
+                <p className="p">- F1 amarillos (grano y elotero)</p>
+                <p className="p">- F1 proceso (blancos, amar y bicolor)</p>
+                <p className="p">- criollos (blanco, azul, rojo, mezclas)</p>
+                <p className="p">- mas......</p>
               </p>{" "}
               <img
                 src="https://t4.ftcdn.net/jpg/02/84/21/39/240_F_284213945_rRGA0EsTNjpnUyl4KhnFlNyGxYW5SdUA.jpg"
@@ -63,11 +63,11 @@ function Granos() {
                 incluyendo maíz forrajero, sorgo, alfalfa, pastos y mucho más..
               </p>
               <p className="tiposForraje">
-                <p className="p">- MAIZ</p>
-                <p className="p">- SORGO</p>
-                <p className="p">- ALFALFA</p>
-                <p className="p">- ZACATES</p>
-                <p className="p">- MAS......</p>
+                <p className="p">- Maíz</p>
+                <p className="p">- Sorgo</p>
+                <p className="p">- Alfalfa</p>
+                <p className="p">- Zacates</p>
+                <p className="p">- Mas......</p>
               </p>{" "}
             </div>
           </div>
@@ -84,13 +84,13 @@ function Granos() {
                 etc.
               </p>
               <p className="tiposForraje">
-                <p className="p">- FRIJOL</p>
-                <p className="p">- GARBANZO</p>
-                <p className="p">- CACAHUATE</p>
-                <p className="p">- CHÍCHAROS</p>
-                <p className="p">- AVENA</p>
-                <p className="p">- EJOTE</p>
-                <p className="p">- MAS......</p>
+                <p className="p">- Frijol</p>
+                <p className="p">- Garbanzo</p>
+                <p className="p">- Cacahuate</p>
+                <p className="p">- Chícharos</p>
+                <p className="p">- Avena</p>
+                <p className="p">- Ejote</p>
+                <p className="p">- Mas......</p>
               </p>{" "}
             </div>
           </div>

@@ -1,0 +1,12 @@
+.containerEventos {
+  margin-top: 150px;
+}
+.tituloEventos {
+  color: #078610;
+  text-align: center;
+}
+.containerEventosCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
