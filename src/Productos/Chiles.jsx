@@ -23,7 +23,7 @@ function Chiles() {
           diversas necesidades del mercado en México. Trabajamos continuamente
           para <strong>innovar </strong> y <strong>mejorar </strong> la calidad
           de nuestros productos, asegurando que nuestros híbridos sean
-          <strong>robustos </strong>robustos, <strong>productivos </strong> y{" "}
+          <strong>robustos </strong>, <strong>productivos </strong> y{" "}
           <strong>adaptables </strong> a distintas condiciones ambientales.
         </p>
         <p className="contenidoP">

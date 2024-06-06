@@ -38,7 +38,8 @@ function Formulario() {
         type="text"
         name="name"
         id="name"
-        placeholder="Tu nombre"
+        placeholder="nombre"
+        maxLength={100}
         required
       />
 
@@ -50,7 +51,8 @@ function Formulario() {
         type="email"
         id="email"
         name="email"
-        placeholder="Tu email"
+        placeholder=" email"
+        maxLength={250}
         required
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
       />
@@ -63,7 +65,8 @@ function Formulario() {
         type="text"
         id="subject"
         name="subject"
-        placeholder="Tu asunto"
+        placeholder=" asunto"
+        maxLength={250}
       />
 
       <label className="labels" htmlFor="message">
@@ -72,7 +75,8 @@ function Formulario() {
       <textarea
         id="message"
         name="message"
-        placeholder="Tu mensaje"
+        maxLength={800}
+        placeholder=" mensaje"
         required
         cols={30}
         rows={5}
