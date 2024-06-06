@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "./Home.css";
 import productos from "../Jsons/JsonProductos";
 import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function HomeProductos() {
   return (
@@ -51,9 +52,9 @@ function HomeProductos() {
                 <h3 className="card-title">{producto.titulo}</h3>
                 <p className="card-body">{producto.descripcion}</p>
                 <div className="containerButton">
-                  <a href={producto.ruta}>
+                  <Link href={producto.ruta}>
                     <button className="buttonVerMas">Ver más</button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

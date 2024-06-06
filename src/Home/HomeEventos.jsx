@@ -1,5 +1,6 @@
 import "./Home.css";
 import ProximoEvento from "../Jsons/JsonProximoEvento.jsx";
+import { Link } from "react-router-dom";
 
 function HomeEventos() {
   return (
@@ -25,9 +26,9 @@ function HomeEventos() {
       ))}
 
       <div className="containerButton">
-        <a href="/eventos">
+        <Link href="/eventos">
           <button id="verTodos">Ver todos</button>
-        </a>
+        </Link>
       </div>
     </>
   );

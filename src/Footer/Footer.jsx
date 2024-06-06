@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -22,19 +23,19 @@ function Footer() {
           <h4>Navegación</h4>
           <ul className="no-bullets">
             <li>
-              <a href="/">Principal</a>
+              <Link href="/">Principal</Link>
             </li>
             <li>
-              <a href="/nosotros">Nosotros</a>
+              <Link href="/nosotros">Nosotros</Link>
             </li>
             <li>
-              <a href="/productos">Productos</a>
+              <Link href="/productos">Productos</Link>
             </li>
             <li>
-              <a href="/eventos">Eventos</a>
+              <Link href="/eventos">Eventos</Link>
             </li>
             <li>
-              <a href="/contacto">Contacto</a>
+              <Link href="/contacto">Contacto</Link>
             </li>
           </ul>
         </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 import { Icon } from "react-icons-kit";
 import { angleDoubleDown } from "react-icons-kit/fa/angleDoubleDown";
+import { Link } from "react-router-dom";
 
 function HomeNosotros() {
   const [showIcon, setShowIcon] = useState(true);
@@ -29,9 +30,9 @@ function HomeNosotros() {
         Biofertilizantes y Semillas horticolas en México y Latinoamerica.
       </p>
       <div className="containerButton">
-        <a href="/nosotros">
+        <Link href="/nosotros">
           <button id="saberMas">Saber mas</button>
-        </a>
+        </Link>
         {showIcon && (
           <a href="#tituloProductos">
             <Icon id="iconBajar" size={46} icon={angleDoubleDown}></Icon>

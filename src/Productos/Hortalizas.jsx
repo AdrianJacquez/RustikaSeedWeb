@@ -35,7 +35,7 @@ function Hortalizas() {
             <button id="btnCatalogo">Abrir Catalogo</button>
           </a>
 
-          <img id="catalogo" src="./public/images/portadaCatalogo.png"></img>
+          <img id="catalogo" src="./images/portadaCatalogo.png"></img>
         </div>
       </div>
       <Footer />

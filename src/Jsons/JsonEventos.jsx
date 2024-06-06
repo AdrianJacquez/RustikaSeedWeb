@@ -27,7 +27,7 @@ const JsonEventos = [
   {
     mes: "ABRIL",
     imagen:
-      "https://tecnoagro.com.mx/images/logos-anunciantes/expo-agricola-jalisco.png",
+      "https://i.vimeocdn.com/video/1660010354-4c7dd012839f7606e93a8ae7fef5745d313d5867bbb583d80366327575b71936-d",
     nombre: "Expo Agricola Jalisco",
     datos: "26-28 de abril, Jalisco, Mexico",
   },
