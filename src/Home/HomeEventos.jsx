@@ -18,7 +18,11 @@ function HomeEventos() {
         <div className="containerCardsEventos" key={index}>
           <div className="cardEvento">
             <h3 className="mesEvento">{proximoEvento.mes}</h3>
-            <img className="imageEvento" src={proximoEvento.imagen} />
+            <img
+              className="imageEvento"
+              src={proximoEvento.imagen}
+              alt={proximoEvento.nombre}
+            />
             <h4 className="nombreEvento">{proximoEvento.nombre}</h4>
             <p className="datosEvento">{proximoEvento.datos}</p>
           </div>

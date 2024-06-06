@@ -19,6 +19,7 @@ function Productos() {
             <img
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/05/94/67/45/240_F_594674526_7oL1c2DpQH0ceZk78gjKbIxHWzRVNBGK.jpg"
+              alt="Hortalizas"
             ></img>
             <p className="pProductos">
               <strong>Semillas De Hortalizas </strong> Las semillas de
@@ -35,6 +36,7 @@ function Productos() {
             <img
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/02/15/24/13/240_F_215241343_VMmzRvWDzpqfN5zFn7nEE6Eu7gyTFUHb.jpg"
+              alt="Tomates"
             ></img>
             <p className="pProductos">
               <strong>Tomates </strong>
@@ -52,6 +54,7 @@ function Productos() {
             <img
               className="imgProductos"
               src="https://t3.ftcdn.net/jpg/08/00/24/00/240_F_800240050_EcXZ4dAlB1Za2SiZX0izJkAZJlsmUBOs.jpg"
+              alt="Chiles"
             ></img>
             <p className="pProductos">
               <strong>Chiles </strong>
@@ -68,6 +71,7 @@ function Productos() {
             <img
               className="imgProductos"
               src="https://t4.ftcdn.net/jpg/04/34/27/21/240_F_434272183_bJy3DtMV4Kr0n1MQS2SpfWiwzO5KsYuJ.jpg"
+              alt="Granos"
             ></img>
             <p className="pProductos">
               <strong>Semillas Granos </strong>
@@ -83,6 +87,7 @@ function Productos() {
             <img
               className="imgProductos"
               src="https://t3.ftcdn.net/jpg/07/74/85/26/240_F_774852699_NI2BzZ5cPNnilAmYX6YXEE0qVXNfrnNr.jpg"
+              alt="Biofertilizantes"
             ></img>
             <p className="pProductos">
               <strong>Biofertilizantes </strong>

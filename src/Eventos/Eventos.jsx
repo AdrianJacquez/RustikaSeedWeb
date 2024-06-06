@@ -21,7 +21,11 @@ function Eventos() {
           {JsonEventos.map((eventos, index) => (
             <div className="cardEvento" key={index}>
               <h3 className="mesEvento">{eventos.mes}</h3>
-              <img className="imageEvento" src={eventos.imagen} />
+              <img
+                className="imageEvento"
+                src={eventos.imagen}
+                alt={eventos.nombre}
+              />
               <h4 className="nombreEvento">{eventos.nombre}</h4>
               <p className="datosEvento">{eventos.datos}</p>
             </div>

@@ -51,7 +51,11 @@ function Chiles() {
               {Anaheim.map((anaheim, index) => (
                 <SwiperSlide key={index} className="swiperSlideChiles">
                   <div id="containerCard">
-                    <img className="cardImgT" src={anaheim.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={anaheim.imagen}
+                      alt={anaheim.nombre}
+                    />
                     <h3 className="cardNombreT">{anaheim.nombre}</h3>
                     <p className="cardDescrT">{anaheim.descripcion}</p>
                     <p className="cardTolerT">{anaheim.tolerancia}</p>
@@ -73,7 +77,11 @@ function Chiles() {
               {Jalapeños.map((jalapeños, index) => (
                 <SwiperSlide key={index} className="swiperSlideChiles">
                   <div id="containerCard">
-                    <img className="cardImgT" src={jalapeños.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={jalapeños.imagen}
+                      alt={jalapeños.nombre}
+                    />
                     <h3 className="cardNombreT">{jalapeños.nombre}</h3>
                     <p className="cardDescrT">{jalapeños.descripcion}</p>
                     <p className="cardTolerT">{jalapeños.tolerancia}</p>
@@ -95,7 +103,11 @@ function Chiles() {
               {Anchos.map((anchos, index) => (
                 <SwiperSlide key={index} className="swiperSlideChiles">
                   <div id="containerCard">
-                    <img className="cardImgT" src={anchos.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={anchos.imagen}
+                      alt={anchos.nombre}
+                    />
                     <h3 className="cardNombreT">{anchos.nombre}</h3>
                     <p className="cardDescrT">{anchos.descripcion}</p>
                     <p className="cardTolerT">{anchos.tolerancia}</p>
@@ -117,7 +129,11 @@ function Chiles() {
               {Serranos.map((serranos, index) => (
                 <SwiperSlide key={index} className="swiperSlideChiles">
                   <div id="containerCard">
-                    <img className="cardImgT" src={serranos.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={serranos.imagen}
+                      alt={serranos.nombre}
+                    />
                     <h3 className="cardNombreT">{serranos.nombre}</h3>
                     <p className="cardDescrT">{serranos.descripcion}</p>
                     <p className="cardTolerT">{serranos.tolerancia}</p>
@@ -139,7 +155,11 @@ function Chiles() {
               {Caribe.map((caribe, index) => (
                 <SwiperSlide key={index} className="swiperSlideChiles">
                   <div id="containerCard">
-                    <img className="cardImgT" src={caribe.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={caribe.imagen}
+                      alt={caribe.nombre}
+                    />
                     <h3 className="cardNombreT">{caribe.nombre}</h3>
                     <p className="cardDescrT">{caribe.descripcion}</p>
                     <p className="cardTolerT">{caribe.tolerancia}</p>

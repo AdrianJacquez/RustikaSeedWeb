@@ -35,7 +35,11 @@ function Hortalizas() {
             <button id="btnCatalogo">Abrir Catalogo</button>
           </a>
 
-          <img id="catalogo" src="./images/portadaCatalogo.png"></img>
+          <img
+            id="catalogo"
+            src="./images/portadaCatalogo.png"
+            alt="Catalogo De Rustika Seed"
+          ></img>
         </div>
       </div>
       <Footer />

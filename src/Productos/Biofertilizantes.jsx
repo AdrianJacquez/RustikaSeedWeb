@@ -22,7 +22,11 @@ function Chiles() {
           {Biofertilizantes.map((biofertilizantes, index) => (
             <div className="cardBio" key={index}>
               <div className="bg">
-                <img id="imageBio" src={biofertilizantes.imagen}></img>
+                <img
+                  id="imageBio"
+                  src={biofertilizantes.imagen}
+                  alt={biofertilizantes.nombre}
+                ></img>
                 <h4 id="nombreBio">{biofertilizantes.nombre}</h4>
                 <p id="pBio">{biofertilizantes.propiedades}</p>
               </div>

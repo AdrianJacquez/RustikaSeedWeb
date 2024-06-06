@@ -39,6 +39,7 @@ function Granos() {
               <img
                 src="https://t4.ftcdn.net/jpg/02/84/21/39/240_F_284213945_rRGA0EsTNjpnUyl4KhnFlNyGxYW5SdUA.jpg"
                 className="imagesGranos"
+                alt="Maicez variados"
               />
               <p className="textRight">
                 - F1 blanco (grano y elotero)
@@ -58,6 +59,7 @@ function Granos() {
               <img
                 src="https://t3.ftcdn.net/jpg/03/92/06/28/240_F_392062820_ZhbiwoJdTP4plH0RRhclZwMm4ydVvW1K.jpg"
                 className="imagesGranos"
+                alt="Granos de maiz"
               />
               <p className="textGrid">
                 Producimos y distribuimos una amplia variedad de semillas,
@@ -100,6 +102,7 @@ function Granos() {
               <img
                 src="https://t3.ftcdn.net/jpg/01/96/74/00/240_F_196740070_v6gJYNKpUVZYNwqzIcVMflUFlGRAv3th.jpg"
                 className="imagesGranos"
+                alt="Milpa de maiz"
               />
             </div>
           </div>

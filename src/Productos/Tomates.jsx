@@ -44,7 +44,11 @@ function Tomates() {
               {indetSaladette.map((indetSala, index) => (
                 <SwiperSlide key={index} className="swiperSlideIndetSaladette">
                   <div id="containerCard">
-                    <img className="cardImgT" src={indetSala.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={indetSala.imagen}
+                      alt={indetSala.nombre}
+                    />
                     <h3 className="cardNombreT">{indetSala.nombre}</h3>
                     <p className="cardDescrT">{indetSala.descripcion}</p>
                     <p className="cardTolerT">{indetSala.tolerancia}</p>
@@ -67,7 +71,11 @@ function Tomates() {
               {indetBola.map((indetBola, index) => (
                 <SwiperSlide key={index} className="swiperSlideIndetSaladette">
                   <div id="containerCard">
-                    <img className="cardImgT" src={indetBola.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={indetBola.imagen}
+                      alt={indetBola.nombre}
+                    />
                     <h3 className="cardNombreT">{indetBola.nombre}</h3>
                     <p className="cardDescrT">{indetBola.descripcion}</p>
                     <p className="cardTolerT">{indetBola.tolerancia}</p>
@@ -89,7 +97,11 @@ function Tomates() {
               {deteSaladette.map((deteSala, index) => (
                 <SwiperSlide key={index} className="swiperSlideIndetSaladette">
                   <div id="containerCard">
-                    <img className="cardImgT" src={deteSala.imagen} />
+                    <img
+                      className="cardImgT"
+                      src={deteSala.imagen}
+                      alt={deteSala.nombre}
+                    />
                     <h3 className="cardNombreT">{deteSala.nombre}</h3>
                     <p className="cardDescrT">{deteSala.descripcion}</p>
                     <p className="cardTolerT">{deteSala.tolerancia}</p>
