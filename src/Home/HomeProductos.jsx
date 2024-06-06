@@ -52,7 +52,7 @@ function HomeProductos() {
                 <h3 className="card-title">{producto.titulo}</h3>
                 <p className="card-body">{producto.descripcion}</p>
                 <div className="containerButton">
-                  <Link href={producto.ruta}>
+                  <Link to={producto.ruta}>
                     <button className="buttonVerMas">Ver más</button>
                   </Link>
                 </div>

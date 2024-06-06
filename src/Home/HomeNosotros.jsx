@@ -30,7 +30,7 @@ function HomeNosotros() {
         Biofertilizantes y Semillas horticolas en México y Latinoamerica.
       </p>
       <div className="containerButton">
-        <Link href="/nosotros">
+        <Link to="/nosotros">
           <button id="saberMas">Saber mas</button>
         </Link>
         {showIcon && (

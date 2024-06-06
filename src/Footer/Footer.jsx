@@ -23,19 +23,19 @@ function Footer() {
           <h4>Navegación</h4>
           <ul className="no-bullets">
             <li>
-              <Link href="/">Principal</Link>
+              <Link to="/">Principal</Link>
             </li>
             <li>
-              <Link href="/nosotros">Nosotros</Link>
+              <Link to="/nosotros">Nosotros</Link>
             </li>
             <li>
-              <Link href="/productos">Productos</Link>
+              <Link to="/productos">Productos</Link>
             </li>
             <li>
-              <Link href="/eventos">Eventos</Link>
+              <Link to="/eventos">Eventos</Link>
             </li>
             <li>
-              <Link href="/contacto">Contacto</Link>
+              <Link to="/contacto">Contacto</Link>
             </li>
           </ul>
         </div>

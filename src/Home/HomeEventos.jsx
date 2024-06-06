@@ -26,7 +26,7 @@ function HomeEventos() {
       ))}
 
       <div className="containerButton">
-        <Link href="/eventos">
+        <Link to="/eventos">
           <button id="verTodos">Ver todos</button>
         </Link>
       </div>
