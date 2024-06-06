@@ -1,5 +1,10 @@
 .containerContacto {
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.containerContacto .mapa {
+  align-self: center;
 }
 .tituloContacto {
   color: #078610;
@@ -7,16 +12,18 @@
 }
 .pContacto {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 .containerRepre {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 /*Representante*/
 #contInfoContacto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .strongContacto {
   font-size: 18px;
@@ -94,7 +101,7 @@
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  padding-left: 0px;
+  width: 100%;
 }
 
 /*Media querys*/

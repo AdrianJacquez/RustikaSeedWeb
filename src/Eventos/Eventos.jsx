@@ -1,11 +1,9 @@
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Eventos.css";
 import JsonEventos from "../Jsons/JsonEventos";
 function Eventos() {
   return (
     <>
-      <Nav />
       <div className="containerEventos">
         <h1 className="tituloEventos">EVENTOS</h1>
         <p>

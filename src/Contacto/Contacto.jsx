@@ -1,4 +1,3 @@
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Contacto.css";
 import Formulario from "./FormularioContacto";
@@ -7,7 +6,6 @@ import Map from "./Map.jsx";
 function Contacto() {
   return (
     <>
-      <Nav />
       <div className="containerContacto">
         <h1 className="tituloContacto">CONTACTO</h1>
         <p className="pContacto">
@@ -105,10 +103,11 @@ function Contacto() {
             </p>
           </div>
         </div>
+        <div className="mapa">
+          <Map />
+        </div>
       </div>
-      <div className="mapa">
-        <Map />
-      </div>
+
       <Footer />
     </>
   );

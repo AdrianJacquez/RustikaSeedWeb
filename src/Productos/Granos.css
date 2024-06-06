@@ -1,3 +1,9 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
 #containerGranos {
   display: flex;
   flex-direction: column;
@@ -14,113 +20,130 @@
 
 .container {
   display: grid;
-  grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  color: black;
+  gap: 20px;
+  margin: 20px;
 }
 
-.maiz {
-  text-align: center;
-  grid-column: span 2;
-  background-color: #d8e8dd;
-  padding: 10px;
-  border-radius: 10px;
-}
-
+/* Estilos de los elementos del grid */
+.maiz,
 .forrajesCol1,
 .otrosCol2 {
   background-color: #d8e8dd;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
 
-.forrajesCol1 {
-  grid-column: 1; /* Ocupa la primera columna */
+.maiz {
+  grid-column: span 2; /* Ocupa ambas columnas en pantallas grandes */
 }
 
-.otrosCol2 {
-  grid-column: 2; /* Ocupa la segunda columna */
+#contMaiz,
+#contForrajes,
+#contOtrasSemillas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contMaiz {
-  display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.tipos {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: 0px;
-  width: 390px;
-}
-
-.tipos .p {
-  margin: 10px 0px 10px 0px;
-  padding: 0px 0px 0px 10px;
+.textLeft,
+.textRight {
+  width: 25%;
+  text-align: justify;
 }
 
 .imagesGranos {
   border-radius: 10px;
+  width: 50%;
+  max-width: 400px;
+  margin: 0 20px;
 }
 
 .textGrid {
-  width: 200px;
+  width: 25%;
   text-align: justify;
-  margin: 0px;
+  margin: 10px 0;
 }
 
-/* Estilos del grid de forrajes */
+.tiposForraje {
+  width: 25%;
+  text-align: left;
+}
+
+/* Flexbox para los contenedores */
 #contForrajes {
   display: flex;
+  align-items: center;
 }
 
-.imagesGranos {
-  border-radius: 10px;
+#contOtrasSemillas {
+  display: flex;
+  align-items: center;
 }
 
-.textGrid {
-  width: 200px;
-  text-align: justify;
-  margin: 0px;
-}
-.tiposForraje {
-  width: 100%;
-}
-.tiposForraje .p {
-  margin: 10px 0px 10px 0px;
-  padding: 0px 0px 0px 10px;
-}
-
-/*MEDIA QUERYS*/
-@media (max-width: 1600px) {
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 1500px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .maiz {
+    grid-column: span 1;
+  }
+
+  .imagesGranos {
+    width: 80%;
+  }
+
+  .textLeft,
+  .textRight,
+  .tiposForraje,
+  .textGrid {
+    width: 100%;
+    text-align: center;
   }
   #contMaiz {
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
   #contForrajes {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  #contOtrasSemillas {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
+  .maiz,
+  .forrajesCol1,
+  .otrosCol2 {
+    padding: 15px;
+  }
+
   .imagesGranos {
-    width: 80%;
+    width: 100%;
   }
-  .maiz {
-    width: 90%;
-  }
-  .tiposForraje {
-    text-align: start;
-  }
-  .tipos {
-    padding-left: 80px;
+
+  .textLeft,
+  .textRight,
+  .tiposForraje,
+  .textGrid {
+    width: 100%;
+    text-align: center;
   }
 }

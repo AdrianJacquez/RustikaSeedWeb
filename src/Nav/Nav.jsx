@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import { Icon } from "react-icons-kit";
 import { list } from "react-icons-kit/ikons/list";
@@ -14,6 +15,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAcordeon, setIsOpenAcordeon] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+  const [animate, setAnimate] = useState(true);
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -45,6 +47,11 @@ function Nav() {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    // Remove animation class after the first render
+    setAnimate(false);
+  }, []);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -55,20 +62,20 @@ function Nav() {
   return (
     <div id="container">
       <header id="header">
-        <nav id="navegador">
-          <a id="homeLogo" href="/">
+        <nav id="navegador" className={animate ? "animacionOn" : ""}>
+          <Link id="homeLogo" to="/">
             <img id="logo" src="/images/logoR.jpg" alt="Rustika Logo" />
-          </a>
+          </Link>
 
           {isMobile ? (
             <div className={`navLinks ${isOpen ? "open" : ""}`}>
-              <a className="linksNav" href="/nosotros">
+              <Link className="linksNav" to="/nosotros">
                 Nosotros
-              </a>
+              </Link>
               <div id="contAcordion">
-                <a className="linksNav" href="/productos">
+                <Link className="linksNav" to="/productos">
                   Productos
-                </a>{" "}
+                </Link>{" "}
                 <Accordion
                   sx={{ backgroundColor: "#D8E8DD", boxShadow: "none" }}
                 >
@@ -83,62 +90,62 @@ function Nav() {
                     </Icon>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <a className="linkProducto" href="/hortalizas">
+                    <Link className="linkProducto" to="/hortalizas">
                       Semillas De Hortalizas
-                    </a>
-                    <a className="linkProducto" href="/tomates">
+                    </Link>
+                    <Link className="linkProducto" to="/tomates">
                       Tomates
-                    </a>
-                    <a className="linkProducto" href="/chiles">
+                    </Link>
+                    <Link className="linkProducto" to="/chiles">
                       Chiles
-                    </a>
-                    <a className="linkProducto" href="/granos">
+                    </Link>
+                    <Link className="linkProducto" to="/granos">
                       Semillas Granos
-                    </a>
-                    <a className="linkProducto" href="/biofertilizantes">
+                    </Link>
+                    <Link className="linkProducto" to="/biofertilizantes">
                       Biofertilizantes
-                    </a>
+                    </Link>
                   </AccordionDetails>
                 </Accordion>
               </div>
-              <a className="linksNav" href="/eventos">
+              <Link className="linksNav" to="/eventos">
                 Eventos
-              </a>
-              <a className="linksNav" href="/contacto">
+              </Link>
+              <Link className="linksNav" to="/contacto">
                 Contacto
-              </a>
+              </Link>
             </div>
           ) : (
             <>
-              <a className="linksNav" href="/nosotros">
+              <Link className="linksNav" to="/nosotros">
                 Nosotros
-              </a>
-              <a className="linksNav" id="productoHover" href="/productos">
+              </Link>
+              <Link className="linksNav" id="productoHover" to="/productos">
                 Productos
                 <div className="contLinkProducto">
-                  <a className="linkProducto" href="/hortalizas">
+                  <Link className="linkProducto" to="/hortalizas">
                     Semillas De Hortalizas
-                  </a>
-                  <a className="linkProducto" href="/tomates">
+                  </Link>
+                  <Link className="linkProducto" to="/tomates">
                     Tomates
-                  </a>
-                  <a className="linkProducto" href="/chiles">
+                  </Link>
+                  <Link className="linkProducto" to="/chiles">
                     Chiles
-                  </a>
-                  <a className="linkProducto" href="/granos">
+                  </Link>
+                  <Link className="linkProducto" to="/granos">
                     Semillas Granos
-                  </a>
-                  <a className="linkProducto" href="/biofertilizantes">
+                  </Link>
+                  <Link className="linkProducto" to="/biofertilizantes">
                     Biofertilizantes
-                  </a>
+                  </Link>
                 </div>
-              </a>
-              <a className="linksNav" href="/eventos">
+              </Link>
+              <Link className="linksNav" to="/eventos">
                 Eventos
-              </a>
-              <a className="linksNav" href="/contacto">
+              </Link>
+              <Link className="linksNav" to="/contacto">
                 Contacto
-              </a>
+              </Link>
             </>
           )}
           <div id="contHamburger">

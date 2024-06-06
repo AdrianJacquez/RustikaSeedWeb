@@ -1,11 +1,9 @@
 import "./Productos.css";
-import Nav from "../Nav/Nav.jsx";
 import Footer from "../Footer/Footer.jsx";
 
 function Productos() {
   return (
     <>
-      <Nav />
       <div id="containerProductos">
         <h1 className="titulo">PRODUCTOS</h1>
         <p className="pProductos">

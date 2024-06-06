@@ -1,5 +1,4 @@
 import "./Tomates.css";
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import indetSaladette from "../Jsons/JsonIndetSaladette";
 import indetBola from "../Jsons/JsonIndetBola";
@@ -13,7 +12,6 @@ import { EffectCards } from "swiper/modules";
 function Tomates() {
   return (
     <>
-      <Nav />
       <div id="containerTomates">
         <h1 id="tituloTomates">TOMATES</h1>
         <p className="contenidoP">

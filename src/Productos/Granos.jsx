@@ -1,11 +1,9 @@
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Granos.css";
 
 function Granos() {
   return (
     <>
-      <Nav />
       <div id="containerGranos">
         <h1 id="tituloGranos">SEMILLAS GRANOS</h1>
         <p className="contenidoP">
@@ -33,21 +31,24 @@ function Granos() {
           <div className="maiz">
             <strong>MAÍCES</strong>
             <div id="contMaiz">
-              <p className="tipos">
-                <p className="p">- F1 blanco (grano y elotero)</p>
-                <p className="p">- F1 amarillos (grano y elotero)</p>
-                <p className="p">- F1 proceso (blancos, amar y bicolor)</p>
-                <p className="p">- criollos (blanco, azul, rojo, mezclas)</p>
-                <p className="p">- mas......</p>
-              </p>{" "}
+              <p className="textLeft">
+                Tenemos una gran variedad de maíces híbridos de diferentes
+                colores y usos en el país: blancos y amarillos, Rojos, Azules,
+                mixtos, etc.
+              </p>
               <img
                 src="https://t4.ftcdn.net/jpg/02/84/21/39/240_F_284213945_rRGA0EsTNjpnUyl4KhnFlNyGxYW5SdUA.jpg"
                 className="imagesGranos"
-              ></img>
-              <p className="textGrid">
-                Tenemos una gran variedad de maíces híbridos de diferentes
-                colores y usos en el país: blancos y amarillos, Rojos, Azules,
-                mixtos, etc
+              />
+              <p className="textRight">
+                - F1 blanco (grano y elotero)
+                <br />
+                - F1 amarillos (grano y elotero)
+                <br />
+                - F1 proceso (blancos, amar y bicolor)
+                <br />
+                - criollos (blanco, azul, rojo, mezclas)
+                <br />- más......
               </p>
             </div>
           </div>
@@ -57,45 +58,54 @@ function Granos() {
               <img
                 src="https://t3.ftcdn.net/jpg/03/92/06/28/240_F_392062820_ZhbiwoJdTP4plH0RRhclZwMm4ydVvW1K.jpg"
                 className="imagesGranos"
-              ></img>
+              />
               <p className="textGrid">
                 Producimos y distribuimos una amplia variedad de semillas,
                 incluyendo maíz forrajero, sorgo, alfalfa, pastos y mucho más..
               </p>
               <p className="tiposForraje">
-                <p className="p">- Maíz</p>
-                <p className="p">- Sorgo</p>
-                <p className="p">- Alfalfa</p>
-                <p className="p">- Zacates</p>
-                <p className="p">- Mas......</p>
-              </p>{" "}
+                - Maíz
+                <br />
+                - Sorgo
+                <br />
+                - Alfalfa
+                <br />
+                - Zacates
+                <br />- más......
+              </p>
             </div>
           </div>
           <div className="otrosCol2">
             <strong>OTRAS SEMILLAS</strong>
-            <div id="contForrajes">
+            <div id="contOtrasSemillas">
+              <p className="tiposForraje">
+                - Frijol
+                <br />
+                - Garbanzo
+                <br />
+                - Cacahuate
+                <br />
+                - Chícharos
+                <br />
+                - Avena
+                <br />
+                - Ejote
+                <br />- más......
+              </p>
+              <p className="textGrid">
+                También comercializamos semilla de frijol, maíz, garbanzo,
+                ejote, cacahuate y semillas criollas regionales de todo tipo,
+                etc.
+              </p>
               <img
                 src="https://t3.ftcdn.net/jpg/01/96/74/00/240_F_196740070_v6gJYNKpUVZYNwqzIcVMflUFlGRAv3th.jpg"
                 className="imagesGranos"
-              ></img>
-              <p className="textGrid">
-                También comercializamos semilla de frijol, Maíz, Garbanzo,
-                Ejote, Cacahuate y semillas criollas regionales de todo tipo,
-                etc.
-              </p>
-              <p className="tiposForraje">
-                <p className="p">- Frijol</p>
-                <p className="p">- Garbanzo</p>
-                <p className="p">- Cacahuate</p>
-                <p className="p">- Chícharos</p>
-                <p className="p">- Avena</p>
-                <p className="p">- Ejote</p>
-                <p className="p">- Mas......</p>
-              </p>{" "}
+              />
             </div>
           </div>
         </div>
       </div>
+      ;
       <Footer />
     </>
   );

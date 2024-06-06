@@ -1,11 +1,9 @@
-import Nav from "../Nav/Nav.jsx";
 import Footer from "../Footer/Footer.jsx";
 import "./Hortalizas.css";
 
 function Hortalizas() {
   return (
     <>
-      <Nav />
       <div id="containerHortaliza">
         <h1 id="tituloHortaliza">SEMILLAS DE HORTALIZAS</h1>
         <p className="contenidoP">

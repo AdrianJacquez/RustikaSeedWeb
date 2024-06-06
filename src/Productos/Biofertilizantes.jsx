@@ -1,12 +1,10 @@
 import "./Biofertilizantes.css";
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import Biofertilizantes from "../Jsons/JsonBiofertilizante.jsx";
 
 function Chiles() {
   return (
     <>
-      <Nav />
       <div id="containerChiles">
         <h1 id="tituloChiles">Biofertilizantes</h1>
         <p className="contenidoP">

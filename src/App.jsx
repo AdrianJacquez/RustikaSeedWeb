@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Nav from "./Nav/Nav.jsx";
 import Nosotros from "./Nosotros/Nosotros.jsx";
 import Productos from "./Productos/Productos.jsx";
 import Eventos from "./Eventos/Eventos.jsx";
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <>
+        <Nav />
         <Routes>
           <Route path={"/"} element={<Home />}></Route>
           <Route path={"/nosotros"} element={<Nosotros />} />

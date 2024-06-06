@@ -1,5 +1,4 @@
 import "./Chiles.css";
-import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import Anaheim from "../Jsons/JsonAnaheim.jsx";
 import Jalapeños from "../Jsons/JsonJalapeños.jsx";
@@ -15,7 +14,6 @@ import { EffectCards } from "swiper/modules";
 function Chiles() {
   return (
     <>
-      <Nav />
       <div id="containerChiles">
         <h1 id="tituloChiles">CHILES</h1>
         <p className="contenidoP">
