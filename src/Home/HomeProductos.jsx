@@ -41,7 +41,7 @@ function HomeProductos() {
           }}
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
-          className="swiper-containe"
+          className="swiper-container"
         >
           {productos.map((producto, index) => (
             <SwiperSlide key={index}>

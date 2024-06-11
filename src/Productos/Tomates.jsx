@@ -55,7 +55,6 @@ function Tomates() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
 
@@ -82,7 +81,6 @@ function Tomates() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
           <div className="contCard">
@@ -108,7 +106,6 @@ function Tomates() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
         </div>

@@ -6,7 +6,7 @@ function Eventos() {
     <>
       <div className="containerEventos">
         <h1 className="tituloEventos">EVENTOS</h1>
-        <p>
+        <p className="pEvento">
           ¡Únete a nosotros en nuestros eventos <strong>agrícolas </strong>{" "}
           donde promovemos el
           <strong> desarrollo </strong> de la agricultura a través de semillas e

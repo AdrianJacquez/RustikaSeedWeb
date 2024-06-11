@@ -67,7 +67,7 @@
   text-align: justify;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1095px) {
   #containerTomateCards {
     display: flex;
     flex-direction: column;

@@ -62,7 +62,6 @@ function Chiles() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
           <div className="contCard">
@@ -88,7 +87,6 @@ function Chiles() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
           <div className="contCard">
@@ -140,7 +138,6 @@ function Chiles() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
           <div className="contCard">
@@ -166,7 +163,6 @@ function Chiles() {
                   </div>
                 </SwiperSlide>
               ))}
-              ,
             </Swiper>
           </div>
         </div>

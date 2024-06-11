@@ -107,10 +107,13 @@ p {
 .swiper-container {
   width: 94%; /* Ajusta el ancho al contenido */
   overflow: hidden;
+  padding: 10px 0px;
 }
 
 .swiper-slide {
   width: 300px; /* Ancho fijo para las tarjetas */
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -118,6 +121,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 420px;
   margin: 10px;
   min-height: 340px;
   border-radius: 20px;
