@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contacto.css";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
 
 function Formulario() {
   const form = useRef();
@@ -18,12 +20,28 @@ function Formulario() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Mensaje enviado con éxito!");
-          form.current.reset(); // Limpiar los inputs después de enviar el formulario
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "!Enviado Con Exito¡",
+            showConfirmButton: false,
+            timer: 1500,
+            background: "#D8E8DD",
+            iconColor: "#078610",
+          });
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
-          alert("Hubo un error al enviar el mensaje.");
+          Swal.fire({
+            icon: "error",
+            title: "No Se Pudo Enviar",
+            text: "Something went wrong!",
+            showConfirmButton: false,
+            timer: 1500,
+            background: "#D8E8DD",
+            iconColor: "#078610",
+          });
         }
       );
   };
@@ -54,7 +72,7 @@ function Formulario() {
         placeholder=" email"
         maxLength={250}
         required
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       />
 
       <label className="labels" htmlFor="subject">
