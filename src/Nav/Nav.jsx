@@ -62,7 +62,11 @@ function Nav() {
   return (
     <div id="container">
       <header id="header">
-        <nav id="navegador" className={animate ? "animacionOn" : ""}>
+        <nav
+          id="navegador"
+          ref={menuRef} // Agregar una referencia al menú para detectar clics dentro de él
+          className={animate ? "animacionOn" : ""}
+        >
           <Link id="homeLogo" to="/">
             <img id="logo" src="/images/logoR.jpg" alt="Rustika Logo" />
           </Link>
