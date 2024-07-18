@@ -128,7 +128,7 @@ function Nav() {
                 Productos
                 <div className="contLinkProducto">
                   <Link className="linkProducto" to="/hortalizas">
-                    Semillas De Hortalizas
+                    Semillas Hortalizas
                   </Link>
                   <Link className="linkProducto" to="/tomates">
                     Tomates
