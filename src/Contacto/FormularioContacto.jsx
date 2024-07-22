@@ -28,6 +28,7 @@ function Formulario() {
             timer: 1500,
             background: "#D8E8DD",
             iconColor: "#078610",
+            textColor:"",
           });
           form.current.reset();
         },
