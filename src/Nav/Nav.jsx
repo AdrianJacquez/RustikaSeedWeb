@@ -95,7 +95,7 @@ function Nav() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <Link className="linkProducto" to="/hortalizas">
-                      Semillas De Hortalizas
+                      Semillas Hortalizas
                     </Link>
                     <Link className="linkProducto" to="/tomates">
                       Tomates
